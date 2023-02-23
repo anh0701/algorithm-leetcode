@@ -1,0 +1,7 @@
+- cho kí tự (, [, { vào trong stack
+- nếu mà ), thì bỏ ( ra khỏi stack
+- nếu là ], thì bỏ [ ra khỏi satck
+- nếu là }, thì bỏ { ra khỏi stack
+- nếu stack rỗng => thỏa mãn
+- stack.pop: là xóa khỏi stack
+- satck.push: là đẩy vào stack
