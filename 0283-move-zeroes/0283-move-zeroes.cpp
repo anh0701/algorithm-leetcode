@@ -9,17 +9,17 @@ public:
         // nums.erase( remove( nums.begin(), nums.end(), 0 ), nums.end() );
         // nums.resize( size );
         
-        queue<int> q;
-        for(int i=0; i<nums.size(); i++){
-            if(nums[i]==0){
-                q.push(i);
+        int i = 0;
+        int n = nums.size(); 
+        for (int num:nums){
+            if(num != 0){
+                nums[i] = num;
+                i++;
             }
-            else if(!q.empty()){
-                nums[q.front()] = nums[i];
-                nums[i] = 0;
-                q.pop();
-                q.push(i);
-            }
+        }
+        while(i<n){
+            nums[i] = 0;
+            i++;
         }
     }
 };
